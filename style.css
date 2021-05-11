@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora&family=Montserrat:wght@100&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background: #181719;
+	color: #ffffff;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+hr {
+	color: #ffffff;
+}
+header .logo__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 1rem;
+}
+header .logo {
+	font-family: "Crimson Pro", serif;
+	font-weight: 200;
+	font-size: 14px;
+	border: solid white 1px;
+	width: auto;
+	padding: 5px;
+}
+header .btn {
+	background-color: inherit;
+	border: none;
+}
+header .nav__list {
+	position: fixed;
+	top: 0%;
+	transform: translate(0%, -100%);
+	background-color: #181719;
+	z-index: 5;
+	width: 100%;
+	height: max(600px, 100vh);
+	transition: all 0.2s linear;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 1rem;
+}
+header .nav__list .button__container {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 2rem;
+}
+header .nav__list ul {
+	display: flex;
+	margin-top: 5rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+header .nav__list .nav__link {
+	margin: 1rem 0;
+	font-weight: 500;
+	font-size: 18px;
+	transition: all 0.2s linear;
+	font-family: "Montserrat", sans-serif;
+}
+header .nav__list .nav__link:hover {
+	cursor: pointer;
+	font-weight: 700;
+	text-decoration: underline;
+}
+header .nav__list--show {
+	transform: none;
+}
+.material-icons.md-36 {
+	cursor: pointer;
+	color: #ffffff;
+	font-size: 36px;
+}
+.content {
+	font-family: Montserrat;
+	font-size: 14px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+	max-width: 375px;
+}
+.content h1 {
+	font-family: Lora;
+	font-size: 36px;
+	font-weight: 500;
+}
+.content a {
+	font-weight: bold;
+	text-decoration: none;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.photo1 {
+	padding: 20px 20px 20px 20px;
+}
+.about {
+	margin: 0 auto;
+	margin-right: 7%;
+	margin-top: -10%;
+	width: 70%;
+	max-width: 320px;
+	height: 150px;
+	filter: opacity(1);
+	background-color: #181719;
+	padding: 10px 10px;
+	font-family: Montserrat;
+	font-weight: 500;
+}
+.about img {
+	grid-area: "img";
+	width: 36.59px;
+	height: 36.59px;
+	border-radius: 50%;
+}
+.about p {
+	margin-top: 0px;
+	margin-left: 50px;
+	grid-area: "para";
+}
+.about h2 {
+	font-family: Lora;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+footer {
+	margin-top: 100px;
+	margin-bottom: 20px;
+	font-family: Montserrat;
+	font-weight: 500;
+	font-size: 14px;
+	color: gray;
+	text-align: center;
+}
+footer a {
+	text-decoration: none;
+	color: rgb(175, 175, 175);
+}
+
+@media (min-width: 850px) {
+	button {
+		display: none;
+	}
+	.container {
+		display: grid;
+		grid-template-rows: auto auto 1fr auto auto;
+		grid-template-areas:
+			"header header"
+			"content photo"
+			"content about"
+			"footer footer";
+	}
+	hr {
+		display: none;
+	}
+	header {
+		grid-area: header;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		padding: 1rem 3rem;
+	}
+	header .logo__head {
+		padding: 0;
+	}
+	header .nav__list {
+		position: inherit;
+		transform: none;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+	}
+	header .nav__list ul {
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+	}
+	header .nav__list .nav__link {
+		margin: 0;
+		margin-top: 0.5rem;
+		padding: 0;
+		padding-left: 5rem;
+	}
+	.content {
+		grid-area: content;
+		align-self: center;
+	}
+	.photo1 {
+		grid-area: photo;
+	}
+	.about {
+		grid-area: about;
+	}
+	footer {
+		grid-area: footer;
+	}
+}
