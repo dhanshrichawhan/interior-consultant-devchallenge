@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Interior Consultant </h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -21,6 +21,18 @@
     </a>
   </h3>
 </div>
+<br>
+<br>
+<div align="center">
+  <h2>Desktop View</h2>
+  <br>
+  <img src="assets\127.0.0.1_5500_index.html.png" width="600px">
+  <br><br>
+  <h2>Mobile View</h2>
+  <br>
+  <img src="assets\127.0.0.1_5500_index.html(iPhone X).png" width="300px">
+</div>
+<br>
 
 ### Built With
 
